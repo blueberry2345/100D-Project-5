@@ -1,13 +1,12 @@
 import random
 import tkinter
 import time
-from tkinter import font
 
 
 class TypeTester:
     def __init__(self, window, word_list):
         # Creates label for displaying test text.
-        self.test_label = tkinter.Label(window, text="                    ", font=font.Font(family="Arial", size=12, weight="bold"))
+        self.test_label = tkinter.Label(window, text="                    ", font=tkinter.font.Font(family="Arial", size=12, weight="bold"))
         # Creates entry box for user to type in.
         self.entry_box = tkinter.Entry(window)
         # Creation of label and string that contains result of the test.
